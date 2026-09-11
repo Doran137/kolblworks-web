@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF Skener — Zásady ochrany soukromí</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.8rem; }
+  @media (prefers-color-scheme: dark) { body { background: #111; color: #ddd; } }
+</style>
+</head>
+<body>
+<h1>Zásady ochrany soukromí — PDF Skener</h1>
+<p>Platné od: 11. 9. 2026</p>
+
+<h2>Shrnutí</h2>
+<p><strong>Aplikace PDF Skener sama nesbírá žádné osobní údaje a
+naskenované dokumenty nikam neodesílá.</strong> Ukládá je pouze do vašeho
+zařízení. Skenovací modul služeb Google Play, který aplikace používá, může
+Googlu odesílat technické údaje o zařízení a průběhu skenování (ne obsah
+dokumentů) — podrobnosti v sekci „Google Play Services a ML Kit“.
+Veškeré zpracování — skenování, úpravy obrazu i tvorba PDF — probíhá
+výhradně ve vašem zařízení.</p>
+
+<h2>Jaká data aplikace zpracovává</h2>
+<ul>
+  <li><strong>Fotografie dokumentů</strong>, které pořídíte nebo vyberete
+  z galerie. Uložený dokument je vždy v soukromém úložišti aplikace (zdroj
+  seznamu v aplikaci) a při úspěšném exportu také ve složce
+  <em>Dokumenty/PDF Scanner</em>, kterou vidí i jiné aplikace. Pokud se
+  kopii do složky Dokumenty vytvořit nepodaří, aplikace to oznámí a
+  dokument zůstává jen v aplikaci, dokud export nezopakujete. Obě kopie
+  jsou pouze ve vašem zařízení.</li>
+</ul>
+
+<h2>Co aplikace nedělá</h2>
+<ul>
+  <li>Nevyžaduje registraci ani přihlášení.</li>
+  <li>Neobsahuje vlastní analytiku, reklamy ani sledovací technologie.
+  Jediná diagnostika, která zařízení opouští, jsou technické metriky
+  skenovacího modulu Google (viz níže).</li>
+  <li>Neodesílá naskenované dokumenty, jejich snímky ani text na žádné
+  servery.</li>
+</ul>
+
+<h2>Oprávnění</h2>
+<ul>
+  <li><strong>Fotoaparát</strong> — používá ho skenovací obrazovka služeb
+  Google Play (ML Kit Document Scanner); aplikace sama o oprávnění
+  k fotoaparátu nežádá a mimo skenování k němu nemá přístup.</li>
+  <li>Přístup k obrázkům probíhá přes systémový výběr souborů; aplikace
+  nemá plošný přístup ke galerii.</li>
+  <li><strong>Přístup k internetu</strong> — používají ho služby Google
+  Play: před prvním použitím stáhnou skenovací modul a jeho uživatelské
+  rozhraní a později mohou kontaktovat servery Google kvůli aktualizacím
+  modulu a odesílat technické metriky SDK (viz níže). Bez služeb Google
+  Play aplikace skenovat nemůže. Samotná aplikace žádné vlastní síťové
+  spojení nenavazuje a dokumenty se neodesílají.</li>
+</ul>
+
+<h2>Zálohování</h2>
+<p>Systémová záloha aplikace je <strong>vypnutá</strong>: naskenované
+dokumenty se nekopírují na Google účet ani při přenosu na nový telefon.
+Zůstávají v zařízení, dokud je sami nepřenesete nebo nesdílíte.</p>
+
+<h2>Google Play Services a ML Kit</h2>
+<p>Pro rozpoznání okrajů dokumentu aplikace využívá
+<strong>Google ML Kit Document Scanner</strong>. Rozpoznávání probíhá
+<strong>přímo v zařízení</strong>; snímky se do Googlu neodesílají.
+Skenovací modul a jeho rozhraní stahují služby Google Play dynamicky
+před prvním použitím. Podle podmínek ML Kit mohou tyto služby kontaktovat
+servery Google kvůli aktualizacím a odesílat technické údaje o výkonu a
+využití SDK (informace o zařízení, verzi aplikace a průběhu skenování, ne
+obsah dokumentů). Na tato data se vztahují
+<a href="https://policies.google.com/privacy">zásady ochrany soukromí
+společnosti Google</a>.</p>
+
+<h2>Vaše kontrola nad daty</h2>
+<p>Smazání dokumentu v aplikaci odstraní obě kopie — soukromou i tu ve
+složce Dokumenty/PDF Scanner. Pokud se kopii ve složce Dokumenty smazat
+nepodaří (například u souboru vytvořeného dřívější instalací aplikace,
+který podle pravidel Androidu nová instalace spravovat nesmí), aplikace to
+oznámí a soubor lze odstranit ve správci souborů. Odinstalováním aplikace
+se odstraní soukromé úložiště; složka Dokumenty/PDF Scanner zůstává, dokud
+ji sami nesmažete.</p>
+
+<h2>Kontakt</h2>
+<p>Dotazy k soukromí: <strong>info@kolblworks.cz</strong></p>
+</body>
+</html>
