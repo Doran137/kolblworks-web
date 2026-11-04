@@ -7,3 +7,4 @@ Nasazení: soubory nahrát 1:1 do `public_html` přes Webglobe admin → Hosting
 - `/index.html` – rozcestník
 - `/pdfskener/privacy.html` – zásady ochrany soukromí, aplikace PDF Skener
 - `/editor-prostor/privacy-policy.html` – zásady ochrany soukromí, Editor vnitřních a vnějších prostor
+- `/planovac/privacy.html` (+ `privacy-en.html`) – zásady ochrany soukromí, Plánovač

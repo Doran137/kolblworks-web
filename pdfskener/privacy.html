@@ -14,14 +14,14 @@
 <body>
 <p><a href="privacy-en.html" hreflang="en">English version</a></p>
 <h1>Zásady ochrany soukromí — PDF Skener</h1>
-<p>Platné od: 11. 9. 2026</p>
+<p>Platné od: 4. 11. 2026</p>
 
 <h2>Shrnutí</h2>
 <p><strong>Aplikace PDF Skener sama nesbírá žádné osobní údaje a
-naskenované dokumenty nikam neodesílá.</strong> Ukládá je pouze do vašeho
-zařízení. Skenovací modul služeb Google Play, který aplikace používá, může
-Googlu odesílat technické údaje o zařízení a průběhu skenování (ne obsah
-dokumentů) — podrobnosti v sekci „Google Play Services a ML Kit“.
+naskenované dokumenty nikam neodesílá.</strong> Nemá ani oprávnění
+k internetu, takže sama nic odeslat nemůže. Dokumenty ukládá pouze do vašeho
+zařízení. Skenovací obrazovku zajišťují služby Google Play, samostatná
+systémová aplikace Googlu — podrobnosti v sekci „Google Play Services a ML Kit“.
 Veškeré zpracování — skenování, úpravy obrazu i tvorba PDF — probíhá
 výhradně ve vašem zařízení.</p>
 
@@ -40,8 +40,8 @@ výhradně ve vašem zařízení.</p>
 <ul>
   <li>Nevyžaduje registraci ani přihlášení.</li>
   <li>Neobsahuje vlastní analytiku, reklamy ani sledovací technologie.
-  Jediná diagnostika, která zařízení opouští, jsou technické metriky
-  skenovacího modulu Google (viz níže).</li>
+  Technické metriky, které by skenovací knihovna Google chtěla odesílat,
+  se zahazují přímo v zařízení — aplikace nemá přístup k internetu.</li>
   <li>Neodesílá naskenované dokumenty, jejich snímky ani text na žádné
   servery.</li>
 </ul>
@@ -53,12 +53,9 @@ výhradně ve vašem zařízení.</p>
   k fotoaparátu nežádá a mimo skenování k němu nemá přístup.</li>
   <li>Přístup k obrázkům probíhá přes systémový výběr souborů; aplikace
   nemá plošný přístup ke galerii.</li>
-  <li><strong>Přístup k internetu</strong> — používají ho služby Google
-  Play: před prvním použitím stáhnou skenovací modul a jeho uživatelské
-  rozhraní a později mohou kontaktovat servery Google kvůli aktualizacím
-  modulu a odesílat technické metriky SDK (viz níže). Bez služeb Google
-  Play aplikace skenovat nemůže. Samotná aplikace žádné vlastní síťové
-  spojení nenavazuje a dokumenty se neodesílají.</li>
+  <li><strong>Internet</strong> — aplikace oprávnění k internetu
+  <strong>nemá</strong> a žádné síťové spojení nenavazuje. Skenovací modul
+  si stahují služby Google Play samy (viz níže).</li>
 </ul>
 
 <h2>Zálohování</h2>
@@ -71,11 +68,10 @@ Zůstávají v zařízení, dokud je sami nepřenesete nebo nesdílíte.</p>
 <strong>Google ML Kit Document Scanner</strong>. Rozpoznávání probíhá
 <strong>přímo v zařízení</strong>; snímky se do Googlu neodesílají.
 Skenovací modul a jeho rozhraní stahují služby Google Play dynamicky
-před prvním použitím. Podle podmínek ML Kit mohou tyto služby kontaktovat
-servery Google kvůli aktualizacím a odesílat technické údaje o výkonu a
-využití SDK (informace o zařízení, verzi aplikace a průběhu skenování, ne
-obsah dokumentů). Na tato data se vztahují
-<a href="https://policies.google.com/privacy">zásady ochrany soukromí
+před prvním použitím a aktualizují ho. Služby Google Play jsou samostatná
+systémová aplikace s vlastními oprávněními; co ony odesílají Googlu, se
+řídí
+<a href="https://policies.google.com/privacy">zásadami ochrany soukromí
 společnosti Google</a>.</p>
 
 <h2>Vaše kontrola nad daty</h2>
